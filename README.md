@@ -1,6 +1,12 @@
-# Recipe App
+# SpiceSafari
 
-A web application for managing and exploring recipes, built with React and MongoDB.
+A web application for managing and exploring spice-rich recipes, built with React and MongoDB.
+
+## Features
+
+- **User Authentication**: Users can register and log in to manage their recipes.
+- **Recipe Sharing**: Share your unique recipes with the community.
+- **Recipe Search**: Explore recipes online through an external API.
 
 ## Installation
 
@@ -12,8 +18,8 @@ A web application for managing and exploring recipes, built with React and Mongo
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/recipe-app.git
-    cd recipe-app
+    git clone https://github.com/SSShogunn/SpiceSafari.git
+    cd SpiceSafari
     ```
 
 2. Install dependencies:
@@ -37,8 +43,16 @@ A web application for managing and exploring recipes, built with React and Mongo
 
 ## Usage
 
-- Add, edit, and delete recipes to manage your collection.
-- Explore a variety of recipes organized by categories.
+- **User Authentication**:
+  - Register a new account.
+  - Log in to access personalized features.
+  
+- **Recipe Management**:
+  - Add, edit, and delete spice-rich recipes.
+  - Share your unique recipes with the community.
+
+- **Recipe Search**:
+  - Utilize the search button to explore recipes online through an external API.
 
 ## Contributing
 
