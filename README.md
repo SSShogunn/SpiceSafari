@@ -1,6 +1,6 @@
 # SpiceSafari
 
-A web application for managing and exploring spice-rich recipes, built with React and MongoDB.
+A full-stack web application for managing and exploring spice-rich recipes, built with React, Node.js, and MongoDB.
 
 ## Features
 
@@ -22,9 +22,10 @@ A web application for managing and exploring spice-rich recipes, built with Reac
     cd SpiceSafari
     ```
 
-2. Install dependencies:
+2. Install dependencies for the server:
 
     ```bash
+    cd server
     npm install
     ```
 
@@ -33,13 +34,26 @@ A web application for managing and exploring spice-rich recipes, built with Reac
     - Create a MongoDB database and obtain the connection string.
     - Update the MongoDB connection string in `server/config.js`.
 
-4. Start the application:
+4. Start the server:
 
     ```bash
     npm start
     ```
 
-5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the app.
+5. Open a new terminal window, navigate to the client folder, and install client dependencies:
+
+    ```bash
+    cd ../client
+    npm install
+    ```
+
+6. Start the client application:
+
+    ```bash
+    npm start
+    ```
+
+7. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the app.
 
 ## Usage
 
