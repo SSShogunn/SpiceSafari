@@ -22,7 +22,6 @@ mongoose
     console.log(err);
   });
 
-
 app.post("/login", async (req, res) => {
   const { username, password } = req.body;
 
@@ -123,7 +122,7 @@ app.get("/editRecipes/:userID", async (req, res) => {
   }
 });
 
-app.get("/recipes/:id", async (req, res) => {
+app.get("/editRecipe/:id", async (req, res) => {
   const id = req.params.id;
 
   try {
@@ -139,7 +138,7 @@ app.get("/recipes/:id", async (req, res) => {
   }
 });
 
-app.delete("/recipes/:id", async (req, res) => {
+app.delete("/editRecipe/:id", async (req, res) => {
   const id = req.params.id;
 
   try {
@@ -156,7 +155,7 @@ app.delete("/recipes/:id", async (req, res) => {
   }
 });
 
-app.put("/recipes/:id", async (req, res) => {
+app.put("/editRecipe/:id", async (req, res) => {
   const id = req.params.id;
 
   try {
@@ -174,7 +173,7 @@ app.put("/recipes/:id", async (req, res) => {
 });
 
 
-app.listen(PORT, () => console.log("SERVER STARTED ON http://localhost:"+PORT));
+app.listen(PORT, () => console.log("SERVER STARTED ON https://localhost:"+PORT));
 
 
 
