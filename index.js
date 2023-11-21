@@ -6,7 +6,7 @@ import bcrypt from "bcrypt";
 import { collection } from "./models/Users.js";
 import { RecipesModel } from "./models/Recipies.js";
 import { verifyToken } from "./routes/verifyToken.js";
-
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.use(json());
@@ -175,7 +175,7 @@ app.put("/recipes/:id", async (req, res) => {
 });
 
 
-app.listen(5000, () => console.log("Server started on port. -> 5000"));
+app.listen(PORT, () => console.log("SERVER STARTED ON https://localhost:"+PORT));
 
 
 
