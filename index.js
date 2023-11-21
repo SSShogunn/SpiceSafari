@@ -175,7 +175,7 @@ app.put("/recipes/:id", async (req, res) => {
 });
 
 
-app.listen(PORT, () => console.log("SERVER STARTED ON https://localhost:"+PORT));
+app.listen(PORT, () => console.log("SERVER STARTED ON http://localhost:"+PORT));
 
 
 
