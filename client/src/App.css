@@ -2,7 +2,7 @@
 
 body {
   font-family: "Rubik", sans-serif;
-  background-image: url(https://images.unsplash.com/photo-1621317758612-3958e0f07c49?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BpY2V8ZW58MHx8MHx8fDA%3D);
+  background-image: url(https://images.unsplash.com/photo-1509358271058-acd22cc93898?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BpY2VzfGVufDB8fDB8fHww);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
