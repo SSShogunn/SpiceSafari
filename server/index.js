@@ -22,7 +22,6 @@ mongoose
     console.log(err);
   });
 
-app.get("/", cors(), (req, res) => { });
 
 app.post("/login", async (req, res) => {
   const { username, password } = req.body;
