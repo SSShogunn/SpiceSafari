@@ -8,7 +8,7 @@ export default function Rows({ index, recipes }) {
 
     const handleDelete = async () => {
         try {
-            axios.delete(`https://spicesafari.onrender.com/editRecipes/${recipes._id}`)
+            axios.delete(`https://spicesafari.onrender.com/recipes/${recipes._id}`)
                 .then((res) => {
                     if (res.status === 200) {
                         toast.success('Recipe Deleted Successfully', {
