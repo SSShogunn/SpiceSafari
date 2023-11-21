@@ -54,7 +54,6 @@ export default function EditRecipes() {
                     </div>
                 </div>
             </div>
-            <ToastContainer />
         </>
     )
 }

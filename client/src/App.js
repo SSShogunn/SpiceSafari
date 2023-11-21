@@ -14,6 +14,8 @@ import Recipes from "./components/CRUD_PAGES/Recipes";
 import EditRecipes from "./components/CRUD_PAGES/EditRecipes";
 import ViewRecipe from "./components/CRUD_PAGES/ViewRecipe";
 import UpdateRecipe from "./components/CRUD_PAGES/UpdateRecipie";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
 
 function App() {
@@ -29,14 +31,30 @@ function App() {
   const navigator = useNavigate();
   const searchField = useRef(null);
 
+  useEffect(() => {
+    if (window.localStorage.getItem("userID")) {
+      navigator("/home");
+    }
+  }, []);
+
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const result = await axios.post("https://spicesafari.onrender.com/login", {username, password});
+      const result = await axios.post("https://spicesafari.onrender.com/login", { username, password });
       setCookies("access_token", result.data.token);
       window.localStorage.setItem("userID", result.data.userID);
       navigator("/home");
     } catch (error) {
+      toast.error('Incorrect Credentials', {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
       console.log(error);
     }
   };
@@ -78,6 +96,7 @@ function App() {
           <Route path="/recipes" element={<Recipes />} />
           <Route path="/recipes/:id" element={<ViewRecipe />} />
         </Routes>
+        <ToastContainer />
       </div>
       <Footer />
 
