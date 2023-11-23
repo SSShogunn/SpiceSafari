@@ -44,7 +44,7 @@ const RecipeForm = ({ username, history }) => {
 
     const handleRemoveIngredient = (index) => {
         const ingredients = [...formData.ingredients];
-        formData.splice(index, 1);
+        ingredients.splice(index, 1);
         setformData({ ...formData, ingredients });
     };
 
