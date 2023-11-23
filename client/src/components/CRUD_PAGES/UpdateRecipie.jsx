@@ -32,7 +32,7 @@ const UpdateRecipe = () => {
         e.preventDefault();
 
         try {
-            await axios.put(`https://spicesafari.onrender.com/recipe/${id}`, initialRecipe);
+            await axios.put(`https://spicesafari.onrender.com/recipes/${id}`, initialRecipe);
             toast.success('Recipe Updated Successfully', {
                 position: "bottom-right",
                 autoClose: 5000,
