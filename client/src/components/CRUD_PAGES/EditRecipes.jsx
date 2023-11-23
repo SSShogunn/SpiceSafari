@@ -32,7 +32,7 @@ export default function EditRecipes() {
                     <p className="text-center">No Recipe Added Yet !!!</p>
                 </div>
             ) : null}
-            <div className="container mt-5" >
+            <div className="container card mt-5 shadow p-3 mb-5 bg-white rounded mt-5" >
                 <div className="card">
                     <div className="card-body">
                         <table className="table">
