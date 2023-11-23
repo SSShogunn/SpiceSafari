@@ -36,7 +36,7 @@ export default function Nav({
                 </li>
                 <li className="nav-item dropdown">
                   <Link to="" className="nav-link dropdown-toggle active"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
+                    Your Recipes
                   </Link>
                   <ul className="nav-item dropdown-menu">
                     <li><Link className="dropdown-item" aria-current="page" to="/addRecipe">Add Recipe</Link></li>
