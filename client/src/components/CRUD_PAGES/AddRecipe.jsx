@@ -57,7 +57,6 @@ const RecipeForm = ({ username, history }) => {
                     headers: { authorization: cookies.access_token }
                 }
             );
-            alert("Recipe added successfully");
             toast.success('Recipe Added Successfully', {
                 position: "bottom-right",
                 autoClose: 5000,
