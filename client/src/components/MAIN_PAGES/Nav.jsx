@@ -15,7 +15,8 @@ export default function Nav({
     window.localStorage.clear();
     navigate("/");
   };
-  
+
+
   function onSearchChange(e) {
     setSearchQuery(e.target.value);
     console.log(searchQuery);
@@ -35,13 +36,13 @@ export default function Nav({
                   <Link className="nav-link active" aria-current="page" to="/recipes">Recipies</Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <Link to="" className="nav-link dropdown-toggle active"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <Link to="" className="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Your Recipes
                   </Link>
                   <ul className="nav-item dropdown-menu">
-                    <li><Link className="dropdown-item" aria-current="page" to="/addRecipe">Add Recipe</Link></li>
+                    <li><Link className="dropdown-item" aria-current="page" to="/addRecipe">Add Recipe <i class="fa-solid fa-plus"></i></Link></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><Link className="dropdown-item" to="/editRecipe" >Edit Recipe</Link></li>
+                    <li><Link className="dropdown-item" to="/editRecipe" >Edit Recipe <i class="fa-regular fa-pen-to-square"></i></Link></li>
                   </ul>
                 </li>
                 <li className="nav-item">
@@ -59,7 +60,7 @@ export default function Nav({
                   onChange={onSearchChange}
                   required
                 />
-                <button className="btn btn-success" type="submit" >Search</button>
+                <button className="btn btn-success" type="submit" ><i class="fa-solid fa-magnifying-glass"></i></button>
               </form>
             </div>
           </div>
