@@ -76,7 +76,7 @@ const RecipeForm = ({ username, history }) => {
     };
 
     return (
-        <div className='container card mt-5' >
+       <div className='container card mt-5 shadow p-3 mb-5 bg-white rounded' style={{width:"800px"}}>
             <div className="card-body">
                 <h2 className="text-center mt-4 mb-4">Add Recipe</h2>
                 <form onSubmit={handleSubmit}>
