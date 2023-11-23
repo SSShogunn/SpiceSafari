@@ -134,8 +134,9 @@ font-size: 30px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   grid-gap: 1em;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   margin-top: 15rem;
+  border-radius: 300px;
 }
 
 
