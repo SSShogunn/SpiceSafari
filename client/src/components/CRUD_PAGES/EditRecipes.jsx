@@ -29,31 +29,34 @@ export default function EditRecipes() {
         <>
             {recipes.length === 0 ? (
                 <div>
-                    <p className="text-center">No Recipe Added Yet !!!</p>
+                    <h1 className="text-center text-white m-5 p-5">No Recipe Added Yet !!!</h1>
                 </div>
-            ) : null}
-            <div className="container card mt-5 shadow p-3 mb-5 bg-white rounded mt-5" >
-                <div className="card">
-                    <div className="card-body">
-                        <table className="table">
-                            <thead className="table-light">
-                                <tr>
-                                    <th scope="col">Index</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Date Added</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {recipes?.length > 0 &&
-                                    recipes.map((recipes, index) => (
-                                        <Rows key={recipes._id} index={index + 1} recipes={recipes} />
-                                    ))}
-                            </tbody>
-                        </table>
+            ) : (
+                <>
+                    <div className="container card mt-5 shadow p-3 mb-5 bg-white rounded mt-5" >
+                        <div className="card">
+                            <div className="card-body">
+                                <table className="table">
+                                    <thead className="table-light">
+                                        <tr>
+                                            <th scope="col">Index</th>
+                                            <th scope="col">Title</th>
+                                            <th scope="col">Date Added</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {recipes?.length > 0 &&
+                                            recipes.map((recipes, index) => (
+                                                <Rows key={recipes._id} index={index + 1} recipes={recipes} />
+                                            ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </>
+            )}
         </>
     )
 }
